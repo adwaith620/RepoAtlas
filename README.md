@@ -119,36 +119,13 @@ GitHub URL
 
 ## Architecture
 ```mermaid
-flowchart LR
-    subgraph Web["Web app: React and Vite"]
-        UI["Landing and Analysis UI"]
-        RF["React Flow Graph"]
-    end
-
-    subgraph Server["Server: Fastify"]
-        API["REST API"]
-        FETCH["fetch"]
-        ANALYZE["analyze"]
-        GRAPH["graph"]
-        EXPLAIN["explain"]
-        CACHE[("SQLite cache")]
-    end
-
-    subgraph External["External services"]
-        GH["GitHub REST API"]
-        LLM["LLM Provider"]
-    end
-
-    UI --> API
-    RF --> API
-    API --> CACHE
-    API --> FETCH
-    FETCH --> GH
-    FETCH --> ANALYZE
-    ANALYZE --> GRAPH
-    GRAPH --> EXPLAIN
-    EXPLAIN --> LLM
-    EXPLAIN --> CACHE
+flowchart TD
+  UI["Web Frontend (React)"] --> API["Backend API (Fastify)"]
+  API --> Cache[("SQLite Cache")]
+  API --> Fetch["Fetch Repo Data"]
+  Fetch --> Analyze["Code Analyzer"]
+  Analyze --> Explain["LLM Explanations"]
+  Explain --> Cache
 ```
 
 **Design principles**
