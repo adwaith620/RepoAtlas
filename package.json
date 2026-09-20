@@ -1,5 +1,5 @@
 {
-  "name": "repo-explainer",
+  "name": "repoatlas",
   "version": "1.0.0",
   "description": "Map any GitHub repo in seconds. Paste a URL to get an interactive dependency graph, tech stack detection, AI-generated explanations for each file, and a suggested reading order for new contributors.",
   "private": true,
@@ -16,5 +16,17 @@
   "devDependencies": {
     "concurrently": "^8.2.2",
     "typescript": "^5.4.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adwaith620/RepoAtlas.git"
+  },
+  "keywords": [
+    "github",
+    "architecture",
+    "dependency-graph",
+    "code-visualization",
+    "react-flow"
+  ],
+  "license": "MIT"
 }
