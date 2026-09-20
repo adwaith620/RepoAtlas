@@ -1,6 +1,7 @@
 {
   "name": "repo-explainer",
   "version": "1.0.0",
+  "description": "Map any GitHub repo in seconds: interactive dependency graphs, tech stack detection, and AI-generated architecture explanations.",
   "private": true,
   "workspaces": [
     "shared",
