@@ -1,6 +1,5 @@
 <div align="center"> 
-  <h1>🗺️ RepoAtlas</h1>
-  <p>Map any GitHub repo in seconds. Paste a URL to get an interactive dependency graph, tech stack detection, AI-generated explanations for each file, and a suggested reading order for new contributors.</p>
+  <h1>🗺️ RepoAtlas</h1>\n  <p>Map any GitHub repo in seconds. Paste a URL to get an interactive dependency graph, tech stack detection, AI-generated explanations for each file, and a suggested reading order for new contributors.</p>
   <!-- Replace with a real demo GIF --> 
   <img src="docs/demo.gif" alt="RepoAtlas demo" width="800" /> 
 </div> 
